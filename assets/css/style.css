@@ -46,8 +46,8 @@ h6 {
 	font-size:16px;
 }
 p.lead {
-	font-size:24px;
-	font-weight:200;
+	font-size:20px;
+	font-weight:500;
 }
 p {
 	margin-bottom:20px;
@@ -195,7 +195,7 @@ img {
 	padding:10px 0;
 	margin-right:30px;
 	color:inherit;
-	font-size:16px;
+	font-size:24px;
 	border:none;
 	border-bottom:1px solid rgba(255,255,255,0);
 }
@@ -413,7 +413,7 @@ label {
 .navbar-inverse .navbar-nav>li>a {
 	color:inherit;
 	text-transform:uppercase;
-	font-size:12px;
+	font-size:18px;
 	font-weight:bold;
 }
 .navbar-inverse .navbar-nav>li>a:hover,.navbar-inverse .navbar-nav>li>a:focus,.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.active>a:hover,.navbar-inverse .navbar-nav>.active>a:focus {
@@ -454,12 +454,18 @@ label {
 	text-align:center;
 }
 .maintitle .lead {
-	max-width:840px;
+	/*max-width:840px;*/
 	margin:0px auto;
-	margin-bottom:80px;
-	padding-left:20px;
-	padding-right:20px;
+	margin-bottom:40px;
+/*	padding-left:20px;
+	padding-right:20px;*/
 }
+
+.maintitle_contact,.service-box {
+	text-align:center;
+	padding-top: 40%;
+}
+
 .service-box {
 	margin-bottom:30px;
 	background-color:#fff;
@@ -602,17 +608,18 @@ label {
 /*	Contact Area	==================================================*/
 #contactarea {
 	text-align:center;
+	height: 800px;
 }
 #contactarea .maintitle p.lead {
 	margin-bottom:40px;
 }
 #contactarea form {
-	max-width:800px;
+	/*max-width:800px;*/
 	margin:0px auto;
 }
 #contactarea .input-lg,#contactarea .btn-lg {
 	padding:20px 25px;
-	height:65px;
+	/*height:65px;*/
 }
 #contact label {
 	text-transform:uppercase;
@@ -1129,7 +1136,7 @@ img.mfp-img {
 }
 .wrapsection {
     padding-top:140px;
-	padding-bottom:140px;
+		padding-bottom:40px;
     position: relative;
   }
 
@@ -1182,9 +1189,9 @@ img.mfp-img {
 					margin-right:0;
 	}
 	.container {
-					max-width:690px;
+					/*max-width:690px;
 					padding-left:30px;
-					padding-right:30px;
+					padding-right:30px;*/
 	}
 	.navbar-nav>li>a {
 					padding:10px;
