@@ -531,11 +531,18 @@ label {
 #slider {
 	color:#FFF;
 }
-.carousel-control.left,.carousel-control.right {
+.carousel-control.left {
 	background-image:none;
+	left: -30%;
 }
+.carousel-control.right {
+	background-image:none;
+	right: -30%;
+}
+
 .carousel-control {
 	color:#FFF;
+	width: 4%;
 	opacity:1;
 	text-shadow:none;
 }
@@ -603,7 +610,7 @@ label {
 	-webkit-border-radius:20px;
 	-moz-border-radius:20px;
 		height:40px;
-	width:40px;
+	width:40%;
 }
 /*	Contact Area	==================================================*/
 #contactarea {
