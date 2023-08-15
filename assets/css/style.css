@@ -46,8 +46,8 @@ h6 {
 	font-size:16px;
 }
 p.lead {
-	font-size:20px;
-	font-weight:500;
+	font-size:24px;
+	font-weight:200;
 }
 p {
 	margin-bottom:20px;
@@ -150,8 +150,8 @@ img {
 	color:#000;
 }
 .btn-primary,.label-primary {
-	background-color:white;
-	border-color:white;
+	background-color:#444;
+	border-color:#444;
 }
 .btn-primary:hover,.btn-primary:focus {
 	background-color:#d33c00;
@@ -195,7 +195,7 @@ img {
 	padding:10px 0;
 	margin-right:30px;
 	color:inherit;
-	font-size:24px;
+	font-size:16px;
 	border:none;
 	border-bottom:1px solid rgba(255,255,255,0);
 }
@@ -413,7 +413,7 @@ label {
 .navbar-inverse .navbar-nav>li>a {
 	color:inherit;
 	text-transform:uppercase;
-	font-size:18px;
+	font-size:12px;
 	font-weight:bold;
 }
 .navbar-inverse .navbar-nav>li>a:hover,.navbar-inverse .navbar-nav>li>a:focus,.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.active>a:hover,.navbar-inverse .navbar-nav>.active>a:focus {
@@ -454,18 +454,12 @@ label {
 	text-align:center;
 }
 .maintitle .lead {
-	/*max-width:840px;*/
+	max-width:840px;
 	margin:0px auto;
-	margin-bottom:40px;
-/*	padding-left:20px;
-	padding-right:20px;*/
+	margin-bottom:80px;
+	padding-left:20px;
+	padding-right:20px;
 }
-
-.maintitle_contact,.service-box {
-	text-align:center;
-	padding-top: 40%;
-}
-
 .service-box {
 	margin-bottom:30px;
 	background-color:#fff;
@@ -481,7 +475,7 @@ label {
 	margin-bottom: 29px;
 }
 
-/*	Gallery	==================================================*/
+/*	Gallery	==================================================*/ 
 
 #gallery img {
 	width:100%;
@@ -520,29 +514,22 @@ label {
 #gallery a.btn {
 	display:inline-block;
 }
-/*	Faq==================================================*/
+/*	Faq==================================================*/ 
 #faq {
 	background-color:#F9FAFD;
 }
 .faq-block {
 	margin:0px;
 }
-/*	Slider	==================================================*/
-#slider {
+/*	Slider	==================================================*/ 
+#slider {	
 	color:#FFF;
 }
-.carousel-control.left {
+.carousel-control.left,.carousel-control.right {
 	background-image:none;
-	left: -30%;
 }
-.carousel-control.right {
-	background-image:none;
-	right: -30%;
-}
-
 .carousel-control {
 	color:#FFF;
-	width: 4%;
 	opacity:1;
 	text-shadow:none;
 }
@@ -610,23 +597,22 @@ label {
 	-webkit-border-radius:20px;
 	-moz-border-radius:20px;
 		height:40px;
-	width:40%;
+	width:40px;
 }
-/*	Contact Area	==================================================*/
+/*	Contact Area	==================================================*/ 
 #contactarea {
 	text-align:center;
-	height: 800px;
 }
 #contactarea .maintitle p.lead {
 	margin-bottom:40px;
 }
 #contactarea form {
-	/*max-width:800px;*/
+	max-width:800px;
 	margin:0px auto;
 }
 #contactarea .input-lg,#contactarea .btn-lg {
 	padding:20px 25px;
-	/*height:65px;*/
+	height:65px;
 }
 #contact label {
 	text-transform:uppercase;
@@ -703,7 +689,7 @@ label {
 .footer ul.social-icons li a {
 	color:#666;
 }
-.contactalert {
+.contactalert {  
 	margin-top: 20px;
 	border: 1px solid;
 	display: inline-block;
@@ -1137,13 +1123,13 @@ img.mfp-img {
 	right:0;
 	padding-top:0;
 }
-/*	Common	==================================================*/
-.section {
-
+/*	Common	==================================================*/ 
+.section {	
+	
 }
-.wrapsection {
+.wrapsection {  
     padding-top:140px;
-		padding-bottom:40px;
+	padding-bottom:140px;
     position: relative;
   }
 
@@ -1159,7 +1145,7 @@ img.mfp-img {
 	background-attachment: fixed;
 	background-size: cover;
 	overflow: hidden;
-	z-index: 1;
+	z-index: 1;	
 	color:#fff;
 }
 .parallax-overlay {
@@ -1170,7 +1156,7 @@ img.mfp-img {
 	left: 0;
 	z-index: 2;
 }
-/*	Responsive	==================================================*/
+/*	Responsive	==================================================*/ 
 @media (max-width:991px) {
 	.service-box {
 					margin-bottom:30px;
@@ -1178,7 +1164,7 @@ img.mfp-img {
 	#image img.img-responsive {
 					margin-left:auto;
 					margin-right:auto;
-	}
+	}	
 	.navbar-nav>li>a {
 					margin:0 7px;
 	}
@@ -1196,10 +1182,10 @@ img.mfp-img {
 					margin-right:0;
 	}
 	.container {
-					/*max-width:690px;
+					max-width:690px;
 					padding-left:30px;
-					padding-right:30px;*/
-	}
+					padding-right:30px;
+	}	
 	.navbar-nav>li>a {
 					padding:10px;
 	}
@@ -1252,7 +1238,7 @@ img.mfp-img {
 					max-width:690px;
 					padding-left:30px;
 					padding-right:30px;
-	}
+	}	
 }
 @media (max-width:490px) {
 	.wow {
@@ -1273,7 +1259,7 @@ img.mfp-img {
 	}
 	#hero p.lead {
 					font-size:1.5em;
-	}
+	}	
 	.faq-block {
 					margin: 0;
 	}
