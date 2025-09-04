@@ -1,327 +1,358 @@
 <!doctype html>
 <html lang="es">
-	<head>
-		<!-- Meta, title, CSS, favicons, etc. -->
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="">
-		<meta name="author" content="Teresa Algarra Ulierte">
-		<title> Alejandro Algarra </title>
-		<!-- Styles -->
-		<link rel='stylesheet' href='assets/css/bootstrap.min.css'>
-		<link rel='stylesheet' href='assets/css/animate.min.css'>
-		<link rel='stylesheet' href="assets/css/font-awesome.min.css"/>
-		<link rel='stylesheet' href="assets/css/style.css"/>
-		<!-- Fonts -->
-		<link href='http://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
-		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-		<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-		<!-- Favicon -->
-		<link rel="shortcut icon" href="#">
-	</head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alejandro Algarra | Piano - Críticas</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .review-card {
+      transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+      height: 100%;
+    }
+    .review-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    }
+    .review-title {
+      color: #2c3e50;
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+    .review-source {
+      color: #7f8c8d;
+      font-size: 0.9rem;
+    }
+    .review-text {
+      font-style: italic;
+      line-height: 1.6;
+    }
+    .btn-read-more {
+      font-size: 0.875rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Alejandro Algarra <span class="text-muted">Piano</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html" data-i18n="navbar_bio"></a></li>
+          <li class="nav-item"><a class="nav-link" href="media.html" data-i18n="navbar_media"></a></li>
+          <li class="nav-item"><a class="nav-link" href="disco.html" data-i18n="navbar_disco"></a></li>
+          <li class="nav-item"><a class="nav-link active" href="criticas.html" data-i18n="navbar_reviews"></a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html" data-i18n="navbar_contact"></a></li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item"><button class="btn btn-link nav-link" onclick="setLanguage('es')"><img src="assets/img/spanish.png" width="30"></button></li>
+          <li class="nav-item"><button class="btn btn-link nav-link" onclick="setLanguage('en')"><img src="assets/img/english.png" width="30"></button></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
+  <!-- Minimal Header -->
+  <header class="bg-dark text-white py-5" style="margin-top: 56px;">
+    <div class="container text-center">
+      <h1 data-i18n="reviews_title"></h1>
+      <p data-i18n="reviews_subtitle"></p>
+    </div>
+  </header>
 
-	<body>
-		<!-- Hero BG -->
-		<div id="parallax">
+  <!-- Reviews Grid -->
+  <section id="criticas" style="padding: 80px 0; background-color: #f8f9fa;">
+    <div class="container">
+      <div class="row g-4">
+        
+        <!-- Review 1 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card review-card border-0 shadow-sm h-100">
+            <div class="card-body d-flex flex-column">
+              <h3 class="review-title mb-3" data-i18n="review1_title"></h3>
+              <p class="review-text flex-grow-1" data-i18n="review1_text"></p>
+              <div class="mt-auto">
+                <p class="review-source mb-3" data-i18n="review1_source"></p>
+                <a href="assets/reviews/delicioso_beethoven.pdf" class="btn btn-outline-primary btn-sm btn-read-more" data-i18n="read_more"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card review-card border-0 shadow-sm h-100">
+            <div class="card-body d-flex flex-column">
+              <h3 class="review-title mb-3" data-i18n="review2_title"></h3>
+              <p class="review-text flex-grow-1" data-i18n="review2_text"></p>
+              <div class="mt-auto">
+                <p class="review-source mb-3" data-i18n="review2_source"></p>
+                <a href="https://www.melomanodigital.com/resena-chopin-rachmaninov-complete-preludes/" class="btn btn-outline-primary btn-sm btn-read-more" data-i18n="read_more"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card review-card border-0 shadow-sm h-100">
+            <div class="card-body d-flex flex-column">
+              <h3 class="review-title mb-3" data-i18n="review3_title"></h3>
+              <p class="review-text flex-grow-1" data-i18n="review3_text"></p>
+              <div class="mt-auto">
+                <p class="review-source mb-3" data-i18n="review3_source"></p>
+                <a href="https://www.operaworld.es/concierto-benefico-de-la-partiture-dos-pianos-y-el-trio-arbos/" class="btn btn-outline-primary btn-sm btn-read-more" data-i18n="read_more"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 4 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card review-card border-0 shadow-sm h-100">
+            <div class="card-body d-flex flex-column">
+              <h3 class="review-title mb-3" data-i18n="review4_title"></h3>
+              <p class="review-text flex-grow-1" data-i18n="review4_text"></p>
+              <div class="mt-auto">
+                <p class="review-source mb-3" data-i18n="review4_source"></p>
+                <a href="assets/reviews/memorable_chopiniana.pdf" class="btn btn-outline-primary btn-sm btn-read-more" data-i18n="read_more"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 5 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card review-card border-0 shadow-sm h-100">
+            <div class="card-body d-flex flex-column">
+              <h3 class="review-title mb-3" data-i18n="review5_title"></h3>
+              <p class="review-text flex-grow-1" data-i18n="review5_text"></p>
+              <div class="mt-auto">
+                <p class="review-source mb-3" data-i18n="review5_source"></p>
+                <a href="assets/reviews/pianista_de_altura.pdf" class="btn btn-outline-primary btn-sm btn-read-more" data-i18n="read_more"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 6 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card review-card border-0 shadow-sm h-100">
+            <div class="card-body d-flex flex-column">
+              <h3 class="review-title mb-3" data-i18n="review6_title"></h3>
+              <p class="review-text flex-grow-1" data-i18n="review6_text"></p>
+              <div class="mt-auto">
+                <p class="review-source mb-3" data-i18n="review6_source"></p>
+                <a href="https://www.operaworld.es/recital-alejandro-algarra-festival-rafael-orozco-noche-consolidaciones/" class="btn btn-outline-primary btn-sm btn-read-more" data-i18n="read_more"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 7 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card review-card border-0 shadow-sm h-100">
+            <div class="card-body d-flex flex-column">
+              <h3 class="review-title mb-3" data-i18n="review7_title"></h3>
+              <p class="review-text flex-grow-1" data-i18n="review7_text"></p>
+              <div class="mt-auto">
+                <p class="review-source mb-3" data-i18n="review7_source"></p>
+                <a href="https://europatropical.net/2017/03/20/gran-concierto-de-la-joven-orquesta-del-sur-del-espana-jose-y-el-pianista-alejandro-algarra-en-almunecar/" class="btn btn-outline-primary btn-sm btn-read-more" data-i18n="read_more"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 8 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card review-card border-0 shadow-sm h-100">
+            <div class="card-body d-flex flex-column">
+              <h3 class="review-title mb-3" data-i18n="review8_title"></h3>
+              <p class="review-text flex-grow-1" data-i18n="review8_text"></p>
+              <div class="mt-auto">
+                <p class="review-source mb-3" data-i18n="review8_source"></p>
+                <a href="https://www.operaworld.es/brillante-version-del-segundo-concierto-rachmaninov-cargo-alejandro-algarra-la-jose/" class="btn btn-outline-primary btn-sm btn-read-more" data-i18n="read_more"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 9 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card review-card border-0 shadow-sm h-100">
+            <div class="card-body d-flex flex-column">
+              <h3 class="review-title mb-3" data-i18n="review9_title"></h3>
+              <p class="review-text flex-grow-1" data-i18n="review9_text"></p>
+              <div class="mt-auto">
+                <p class="review-source mb-3" data-i18n="review9_source"></p>
+                <a href="assets/reviews/revista_segarra.jpeg" class="btn btn-outline-primary btn-sm btn-read-more" data-i18n="read_more"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Special Section -->
+	<section class="text-white py-5" style="background: linear-gradient(135deg, rgba(44,62,80,0.9), rgba(52,73,94,0.8)), url('assets/img/julio.jpg') top/cover no-repeat;">
+	<div class="container">
+		<div class="row">
+		<div class="col-lg-10 mx-auto text-center">
+			<h3 class="mb-4" data-i18n="interview_title"></h3>
+			<p class="lead" data-i18n="interview_text"></p>
+			<p><a href="http://www.operaworld.es/julio-garcia-casas-la-musica-patrimonio-la-humanidad-cultivarse/" class="btn btn-primary" data-i18n="interview_link"></a></p>
+			<p><small data-i18n="interview_author"></small></p>
 		</div>
-		<!-- Header -->
-		<header id="header" class="navbar navbar-inverse navbar-fixed-top" role="banner">
-			<div class="container">
-				<div class="navbar-header">
-					<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					</button>
-					<a href="index.html" class="navbar-brand"> Alejandro Algarra <span class="lighter">Piano</span></a>
-				</div>
-				<!-- Start Navigation -->
-				<nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
-					<!-- Pages -->
-					<ul class="nav navbar-nav navbar-left">
-						<li><a href="index.html">Biografía</a></li>
-						<li><a href="media.html">Media</a></li>
-						<li><a href="disco.html">Discografía</a></li>
-						<li><a href="criticas.html">Críticas</a></li>
-						<li><a href="contacto.html">Contacto</a></li>
-					</ul>
-					<!-- Languages -->
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="criticas.html"><img src="assets/img/spanish.png" height="30" width="40"></a></li>
-						<li><a href="criticas_en.html"><img src="assets/img/english.png" height="30" width="40"></a></li>
-					</ul>
-				</nav>
-			</div>
-		</header>
+		</div>
+	</div>
+	</section>
 
-		<!-- CRÍTICAS -->
+  <!-- Footer -->
+  <footer class="text-center bg-dark text-white py-3">
+    <p>&copy; 2025 <a href="https://github.com/teresalgarra" class="text-white">Teresa Algarra</a></p>
+  </footer>
 
-		<section id="criticas" class="parallax section" style="background-image: url(assets/img/6_cut.jpg)">
-			<div class="wrapsection">
-			  <div class="parallax-overlay" ></div>
-				<div class="container">
-					<div class="row">
-						<div class="col-md-6">
-							<div id="Criticas" class="carousel slide" data-ride="carousel">
-								<ol class="carousel-indicators">
-									<li data-target="#Criticas" data-slide-to="0" class="active"></li>
-									<li data-target="#Criticas" data-slide-to="1"></li>
-									<li data-target="#Criticas" data-slide-to="2"></li>
-									<li data-target="#Criticas" data-slide-to="3"></li>
-									<li data-target="#Criticas" data-slide-to="4"></li>
-									<li data-target="#Criticas" data-slide-to="5"></li>
-									<li data-target="#Criticas" data-slide-to="6"></li>
-									<li data-target="#Criticas" data-slide-to="7"></li>
-									<li data-target="#Criticas" data-slide-to="8"></li>
-								</ol>
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const translations = {
+      es: {
+        'navbar_bio': 'Biografía', 'navbar_media': 'Media', 'navbar_disco': 'Discografía', 'navbar_reviews': 'Críticas', 'navbar_contact': 'Contacto',
+        'reviews_title': 'Críticas',
+        'reviews_subtitle': 'Lo que dice la prensa especializada',
+        'read_more': 'Leer completa',
+        
+        // Review 1
+        'review1_title': 'DELICIOSO BEETHOVEN',
+        'review1_text': '"Es difícil tocar este concierto [Concierto nº5 para piano]. Pero ese joven y gran pianista, grandioso diríamos, que es Alejandro Algarra, aceptó un reto difícil y lo llevó a buen término, con una actuación digna de todo elogio. Desde los brillantes comienzos, hasta un mayestático final. Fuerza, pasión, entusiasmo, belleza trasmitida en una afortunada versión de esta obra que ha visto naufragar a tantos intérpretes."',
+        'review1_source': 'José Antonio Lacárcel, 2013',
+        
+        // Review 2
+        'review2_title': 'CHOPIN Y RACHMANINOV',
+        'review2_text': '"Con la presente grabación, Ibs Classical continúa su extraordinaria labor de dar visibilidad a destacados músicos del panorama nacional. En esta ocasión, el pianista Alejandro Algarra aborda con gran solvencia y sensibilidad los 24 Preludios opus 28 de Chopin y los Preludios opus 23 y opus 32 de Rajmáninov. [...] Algarra posee la habilidad técnica necesaria para enfrentarse a esta música tan compleja. Su ejecución es siempre clara y utiliza el pedal de forma exquisita, mostrando un agudo sentido para las dinámicas."',
+        'review2_source': 'Francisco J. Balsera, Melómano Digital, 09/05/2022',
+        
+        // Review 3
+        'review3_title': 'DOS PIANOS Y EL TRÍO ARBÓS',
+        'review3_text': '"Alejandro interpretaba tal y como pide \'un Mozart\'. Apariencia de facilidad, aunque tengas que recorrer todas las octavas del piano a una velocidad vertiginosa y un juego entre las teclas. Igualmente, sus movimientos espontáneos hacían la labor, “indirectamente”,	de director. No perdió el contacto visual con su compañero que ayudó a que los dos solistas se convirtieran en uno solo. Un gran trabajo el de Algarra que dio ese toque fresco que se necesitaba."',
+        'review3_source': 'Isaac J. Martín, Opera World, 7/03/2015',
+        
+        // Review 4
+        'review4_title': 'MEMORABLE CHOPINIANA',
+        'review4_text': '"Lo dicho. El generoso patrocinio de la Real Maestranza de Caballería y la organización artística de Juventudes Musicales de Sevilla constituyen un binomio que llena de buena música seis días del mes de junio. Con todo el respeto a los demás intérpretes, afirmamos que este recital de A. Algarra (dedicado por escrito a Julio García Casas) ha sido la cumbre indiscutible de esta XXVI edición."',
+        'review4_source': 'José Luis López López, ABC SEVILLA, 18/06/2015',
+        
+        // Review 5
+        'review5_title': 'PIANISTA DE ALTURA',
+        'review5_text': '"Ha puesto el broche de oro a una serie de conciertos y recitales que han tenido como escenario el Auditorio del Centro Manuel de Falla: los matinales llamados Piano con sabor. [...] Y es que revalida sobradamente ante el teclado todo su historial tan interesante pese a su juventud. Es un pianista nato, un pianista de raza. Siente y vive la música y está sumamente capacitado para transmitirla."',
+        'review5_source': 'José Antonio Lacárcel, 2016',
+        
+        // Review 6
+        'review6_title': 'FESTIVAL RAFAEL OROZCO',
+        'review6_text': '"Las actuaciones del granadino Alejandro Algarra en el Festival de Piano \'Rafael Orozco\' de Córdoba han venido, de alguna manera, a dar cuenta de la evolución artística de un pianista que ya ha dejado atrás las etiquetas de las que todo artista puede salir malparado. Era una joven promesa cuando por primera vez actuó en Córdoba, para presentarse una segunda vez en la programación paralela al festival como un joven pianista con posibilidades de desarrollar una interesante carrera. Finalmente, su recital del pasado sábado en Córdoba nos lo presentó como lo que ya es: uno de los mejores pianistas nacidos en nuestro país."',
+        'review6_source': 'Opera World, 17/11/2016',
+        
+        // Review 7
+        'review7_title': 'GRAN CONCIERTO CON LA JOSE',
+        'review7_text': '"Bajo la dirección de Michael Thomas, y con la extraordinaria actuación del pianista granadino, Alejandro Algarra, la JOSE ofreció un bello concierto sinfónico que, una vez más, volvió a cautivar al numeroso público asistente al mismo."',
+        'review7_source': 'Juan Manuel del Haro, 20/03/2017',
+        
+        // Review 8
+        'review8_title': 'BRILLANTE VERSIÓN DE RACHMANINOV',
+        'review8_text': '"Esa noche el piano de Algarra sonó apoteósico, vibrante y emocionante. El nada-sospechoso-de-ser-fácil Concierto de Rachmaninov pareció, por momentos, una \'bagatela\'. Tal es el apabullante dominio técnico del granadino, sin duda sin nada que envidiar a los considerados “primeras espadas” en el piano a nivel internacional, que se autoregaló el intocable momento musical op. 16 número 4 del compositor ruso."',
+        'review8_source': 'Opera World, 8/04/2017',
+        
+        // Review 9
+        'review9_title': 'DISCO RECOMENDADO DEL MES',
+        'review9_text': '"El pianista Alejandro Algarra ofrece en su debut discográfico un doble CD en el que muestra dos inmensos corpus de la música para piano: los preludios de Chopin y Rachmaninov. Un reto mayúsculo, sin duda alguna y con un gran resultado. [...] Alejandro Algarra tiene un mecanismo que le permite conseguir lo que se propone, y aporta un virtuosismo que sabe poner al servicio de la musicalidad y expresividad siempre imperantes. Una fiesta del piano que le hará disfrutar de lo lindo, con una toma de sonido impecable."',
+        'review9_source': 'Revista Segarra, August 2022',
+        
+        // Interview section
+        'interview_title': 'Julio García Casas: "la música es patrimonio de la humanidad y debe cultivarse"',
+        'interview_text': 'Opera World entrevistó a Don Julio García Casas tras el recital ofrecido por el pianista granadino Alejandro Algarra en Sevilla el pasado 15 de Junio con los 24 Preludios de Chopin como plato principal, con cuya interpretación quiso Algarra agasajar a este gran dinamizador de la vida cultural de Sevilla. Nacido en Fregenal de la Sierra (Badajoz), pero afincado desde hace décadas en la capital hispalense, Julio García Casas ha presidido Juventudes Musicales de Sevilla desde tiempo ya inmemorial, prestando desde esta institución un apoyo fundamental en los inicios de sus carreras a las sucesivas generaciones de pianistas españoles, desde Rafael Orozco a Juan Pérez Floristán.',
+        'interview_link': 'Toda la entrevista en este enlace',
+        'interview_author': 'Carlos Forcada'
+      },
+      en: {
+        'navbar_bio': 'Biography', 'navbar_media': 'Media', 'navbar_disco': 'Discography', 'navbar_reviews': 'Reviews', 'navbar_contact': 'Contact',
+        'reviews_title': 'Reviews',
+        'reviews_subtitle': 'What the specialized press says',
+        'read_more': 'Read full review',
+        
+        // Review 1
+        'review1_title': 'DELICIOUS BEETHOVEN',
+        'review1_text': '"It is difficult to play this concerto [Piano Concerto No. 5]. But this young and great pianist, grandiose we would say, Alejandro Algarra, accepted a difficult challenge and brought it to a successful completion, with a performance worthy of all praise. From the brilliant beginnings to a majestic finale. Strength, passion, enthusiasm, beauty conveyed in a fortunate interpretation of this work which has seen so many performers shipwrecked."',
+        'review1_source': 'José Antonio Lacárcel, 2013',
+        
+        // Review 2
+        'review2_title': 'CHOPIN AND RACHMANINOV',
+        'review2_text': '"With this recording, Ibs Classical continues its extraordinary work of giving visibility to outstanding musicians of the national scene. On this occasion, pianist Alejandro Algarra approaches with great skill and sensitivity Chopin\'s 24 Preludes opus 28 and the Preludes opus 23 and opus 32 by Rachmaninov. [...] Algarra Algarra possesses the necessary technical expertise to tackle this highly complex music. His playing is always clear and he uses the pedal in an exquisite way, showing a keen sense for interpretation."',
+        'review2_source': 'Francisco J. Balsera, Melómano Digital, 09/05/2022',
+        
+        // Review 3
+        'review3_title': 'TWO PIANOS AND THE ARBÓS TRIO',
+        'review3_text': '"Alejandro performed exactly as \'a Mozart\' demands. Appearance of ease, even though you have to traverse all the octaves of the piano at dizzying speed and play between the keys. Likewise, his spontaneous movements did the work of an "indirect" conductor. He did not lose eye contact with his partner, which helped the two soloists become one. A great job by Algarra who gave that fresh edge which was needed."',
+        'review3_source': 'Isaac J. Martín, Opera World, 7/03/2015',
+        
+        // Review 4
+        'review4_title': 'MEMORABLE CHOPINIAN',
+        'review4_text': '"As stated. The generous sponsorship of the Real Maestranza de Caballería and the artistic organization of Juventudes Musicales de Sevilla constitute a partnership that fills six days of June with good music. With all due respect to the other performers, we affirm that this recital by A. Algarra (dedicated in writing to Julio García Casas) was the undisputed highlight of this XXVI edition."',
+        'review4_source': 'José Luis López López, ABC SEVILLA, 18/06/2015',
+        
+        // Review 5
+        'review5_title': 'HIGH-CALIBER PIANIST',
+        'review5_text': '"[Algarra] has put the finishing touch to a series of concerts and recitals that have taken place at the Manuel de Falla Center Auditorium: the morning sessions called "Piano con Sabor" (Piano with Flaovur). [...] And he more than validates at the keyboard his entire interesting career at the piano in spite of his youth. He is a born pianist, a pianist of breed. He feels and lives music and is highly capable of conveying it."',
+        'review5_source': 'José Antonio Lacárcel, 2016',
+        
+        // Review 6
+        'review6_title': 'RAFAEL OROZCO FESTIVAL',
+        'review6_text': '"The performances of Granada\'s Alejandro Algarra at the \'Rafael Orozco\' Piano Festival in Córdoba have somehow given an account of the artistic evolution of a pianist who has already left behind the labels that can harm any artist. He was a promising young pianist when he first performed in Córdoba, to present himself a second time in the festival\'s parallel programme as a young pianist with the potential to develop an interesting career. Finally, his recital last Saturday in Cordoba presented him as what he already is: one of the best pianists born in our country."',
+        'review6_source': 'Opera World, 17/11/2016',
+        
+        // Review 7
+        'review7_title': 'GREAT CONCERT WITH JOSE',
+        'review7_text': '"Under the direction of Michael Thomas, and with the extraordinary performance of the Granada pianist, Alejandro Algarra, JOSE offered a beautiful symphonic concert that, once again, captivated the numerous audience in attendance."',
+        'review7_source': 'Juan Manuel del Haro, 20/03/2017',
+        
+        // Review 8
+        'review8_title': 'BRILLIANT RACHMANINOV VERSION',
+        'review8_text': '"That night Algarra\'s piano sounded magnificent, vibrant and exciting. The not-at-all-easy Rachmaninov Concerto seemed, at times, like a \'bagatelle\'. Such is the overwhelming technical mastery of the Granada pianist, undoubtedly with nothing to envy to those considered "first stars" in piano at international level, that he gave himself the untouchable musical moment op. 16 number 4 from the Russian composer."',
+        'review8_source': 'Opera World, 8/04/2017',
+        
+        // Review 9
+        'review9_title': 'ALBUM OF THE MONTH',
+        'review9_text': '"Pianist Alejandro Algarra offers in his recording debut a double CD in which he shows two immense corpus of piano music: Chopin and Rachmaninov\'s preludes. A tremendous challenge, without a doubt, and with great results. [...] Alejandro Algarra has a mechanism that allows him to accomplish what he intends, and he brings a virtuosity that he knows how to put at the service of the musicality and expressiveness always prevailing. A piano party that will make you have a great time, with an impeccable sound shot."',
+        'review9_source': 'Revista Segarra, August 2022',
+        
+        // Interview section
+        'interview_title': 'Julio García Casas: "Music is Mankind\'s Heritage and Must be Cultivated"',
+        'interview_text': 'Opera World interviewed Don Julio García Casas after the recital offered by Granada pianist Alejandro Algarra in Seville on June 15th with Chopin\'s 24 Preludes as the main course, with whose interpretation Algarra wanted to honor this great promoter of Seville\'s cultural life. Born in Fregenal de la Sierra (Badajoz), but settled for decades in the Sevillian capital, Julio García Casas has presided over "Juventudes Musicales de Sevilla" for an incredibly long time, lending from this institution a fundamental support at the beginning of the careers of succeeding generations of Spanish pianists, from Rafael Orozco to Juan Pérez Floristán.',
+        'interview_link': 'Read full interview',
+        'interview_author': 'Carlos Forcada'
+      }
+    };
 
-								<div class="carousel-inner" style=" width:100%; height: 700px !important;">
-									<div class="item active">
-										<blockquote>
-											<p class="lead"><strong><big>
-												<h2>DELICIOSO BEETHOVEN</h2></blockquote>
-												<center>"Es difícil tocar este concierto [Concierto nº5
-												para piano]. Pero ese joven y gran pianista, grandioso
-												diríamos, que es Alejandro Algarra, aceptó un reto
-												difícil y lo llevó a buen término, con una actuación
-												digna de todo elogio. Desde los brillantes comienzos,
-												hasta un mayestático final. Fuerza, pasión, entusiasmo,
-												belleza trasmitida en una afortunada versión de esta
-												obra que ha visto naufragar a tantos intérpretes."</big>
-												</p>
-											<p>-José Antonio Lacárcel, 2013</p></center></strong>
-										<blockquote>
-											<p class="text-center"><small>
-											<a class="btn btn-primary" href="assets/reviews/delicioso_beethoven.pdf"><font color="black">Más en este enlace</font></a>
-																</p></small>
-										</blockquote>
-									</div>
+    function setLanguage(lang) {
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const k = el.getAttribute('data-i18n');
+        if (translations[lang][k]) {
+          el.textContent = translations[lang][k];
+        }
+      });
+      localStorage.setItem('lang', lang);
+    }
 
-									<div class="item">
-										<blockquote>
-											<p class="lead"><strong><big>
-												<h2>CHOPIN Y RACHMANINOV</h2></blockquote>
-												<center>"Con la presente grabación, Ibs Classical 
-													continúa su extraordinaria labor de dar visibilidad a destacados músicos 
-													del panorama nacional. En esta ocasión, el pianista Alejandro Algarra 
-													aborda con gran solvencia y sensibilidad los 24 Preludios opus 28 de 
-													Chopin y los Preludios opus 23 y opus 32 de Rajmáninov. [...] Algarra 
-													posee la habilidad técnica necesaria para enfrentarse a esta música tan 
-													compleja. Su ejecución es siempre clara y utiliza el pedal de forma 
-													exquisita, mostrando un agudo sentido para las dinámicas."</big>
-												</p>
-											<p>-Francisco J. Balsera, Melómano Digital, 09/05/2022</p></center></strong>
-										<blockquote>
-											<p class="text-center"><small>
-											<a class="btn btn-primary" href="https://www.melomanodigital.com/resena-chopin-rachmaninov-complete-preludes/"><font color="black">Más en este enlace</font></a>
-																</p></small>
-										</blockquote>
-									</div>
-
-									<div class="item">
-										<blockquote>
-											<p class="lead"><strong><big>
-												<h2>DOS PIANOS Y EL TRÍO ARBÓS</h2></blockquote>
-												<center>" Alejandro interpretaba tal y como pide “un
-												Mozart”. Apariencia de facilidad, aunque tengas que
-												recorrer todas las octavas del piano a una velocidad
-												vertiginosa y un juego entre las teclas. Igualmente, sus
-												movimientos espontáneos hacían la labor, “indirectamente”,
-												de director. No perdió el contacto visual con su
-												compañero que ayudó a que los dos solistas se
-												convirtieran en uno solo. Un gran trabajo el de
-												Algarra que dio ese toque fresco que se necesitaba."</big>
-												</p>
-											<p>-Isaac J. Martín, Opera World, 7/03/2015</p></center></strong>
-										<blockquote>
-											<p class="text-center"><small>
-											<a class="btn btn-primary" href="https://www.operaworld.es/concierto-benefico-de-la-partiture-dos-pianos-y-el-trio-arbos/"><font color="black">Más en este enlace</font></a>
-																</p></small>
-										</blockquote>
-									</div>
-
-									<div class="item">
-										<blockquote>
-											<p class="lead"><strong><big>
-												<h2>MEMORABLE CHOPINIANA</h2></blockquote>
-												<center>"Lo dicho. El generoso patrocinio de la Real
-												Maestranza de Caballería y la organización artística
-												de Juventudes Musicales de Sevilla constituyen un
-												binomio que llena de buena música seis días del mes de
-												junio. Con todo el respeto a los demás intérpretes,
-												afirmamos que este recital de A. Algarra (dedicado
-												por escrito a Julio García Casas) ha sido la cumbre
-												indiscutible de esta XXVI edición."</big>
-												</p>
-											<p>-José Luis López López, ABC SEVILLA (Sevilla), 18/06/2015</p></center></strong>
-										<blockquote>
-											<p class="text-center"><small>
-											<a class="btn btn-primary" href="assets/reviews/memorable_chopiniana.pdf"><font color="black">Más en este enlace</font></a>
-																</p></small>
-										</blockquote>
-									</div>
-
-									<div class="item">
-										<blockquote>
-											<p class="lead"><strong><big>
-												<h2>PIANISTA DE ALTURA</h2></blockquote>
-												<center>"Ha puesto el broche de oro a una serie de
-												conciertos y recitales que han tenido como escenario
-												el Auditorio del Centro Manuel de Falla: los matinales
-												llamados Piano con sabor. [...] Y es que revalida sobradamente
-												ante el teclado todo su historial tan interesante pese
-												a su juventud. Es un pianista nato, un pianista de raza.
-												Siente y vive la música y está sumamente capacitado
-												para transmitirla. "</big>
-												</p>
-											<p>-José Antonio Lacárcel, 2016</p></center></strong>
-										<blockquote>
-											<p class="text-center"><small>
-											<a class="btn btn-primary" href="assets/reviews/pianista_de_altura.pdf"><font color="black">Más en este enlace</font></a>
-																</p></small>
-										</blockquote>
-									</div>
-
-									<div class="item">
-										<blockquote>
-											<p class="lead"><strong><big>
-												<h2>FESTIVAL RAFAEL OROZCO</h2></blockquote>
-												<center>"Las actuaciones del granadino Alejandro Algarra
-												en el Festival de Piano “Rafael Orozco” de Córdoba han
-												venido, de alguna manera, a dar cuenta de la evolución
-												artística de un pianista que ya ha dejado atrás las
-												etiquetas de las que todo artista puede salir malparado.
-												Era una joven promesa cuando por primera vez actuó en
-												Córdoba, para presentarse una segunda vez en la
-												programación paralela al festival como un joven
-												pianista con posibilidades de desarrollar una
-												interesante carrera. Finalmente, su recital del pasado
-												sábado en Córdoba nos lo presentó como lo que ya es:
-												uno de los mejores pianistas nacidos en nuestro país."</big>
-												</p>
-											<p>-Opera World, 17/11/2016</p></center></strong>
-										<blockquote>
-											<p class="text-center"><small>
-											<a class="btn btn-primary" href="https://www.operaworld.es/recital-alejandro-algarra-festival-rafael-orozco-noche-consolidaciones/"><font color="black">Más en este enlace</font></a>
-																</p></small>
-										</blockquote>
-									</div>
-
-									<div class="item">
-										<blockquote>
-											<p class="lead"><strong><big>
-												<h2>GRAN CONCIERTO CON LA JOSE</h2></blockquote>
-												<center>"Bajo la dirección de Michael Thomas, y con la
-												extraordinaria actuación del pianista granadino,
-												Alejandro Algarra, la JOSE ofreció un bello concierto
-												sinfónico que, una vez más, volvió a cautivar al
-												numeroso público asistente al mismo."</big>
-												</p>
-											<p>-Juan Manuel del Haro, 20/03/2017</p></center></strong>
-										<blockquote>
-											<p class="text-center"><small>
-											<a class="btn btn-primary" href="https://europatropical.net/2017/03/20/gran-concierto-de-la-joven-orquesta-del-sur-del-espana-jose-y-el-pianista-alejandro-algarra-en-almunecar/"><font color="black">Más en este enlace</font></a>
-																</p></small>
-										</blockquote>
-									</div>
-
-									<div class="item">
-										<blockquote>
-											<p class="lead"><strong><big>
-												<h2>BRILLANTE VERSIÓN DE RACHMANINOV</h2></blockquote>
-												<center>"Esa noche el piano de Algarra sonó apoteósico,
-												vibrante y emocionante. El nada-sospechoso-de-ser-fácil
-												Concierto de Rachmaninov pareció, por momentos, una
-												“bagatela”. Tal es el apabullante dominio técnico del
-												granadino, sin duda sin nada que envidiar a los
-												considerados “primeras espadas” en el piano a nivel
-												internacional, que se autoregaló el intocable momento
-												musical op. 16 número 4 del compositor ruso."</big>
-												</p>
-											<p>-Opera World, 8/04/2017</p></center></strong>
-										<blockquote>
-											<p class="text-center"><small>
-											<a class="btn btn-primary" href="https://www.operaworld.es/brillante-version-del-segundo-concierto-rachmaninov-cargo-alejandro-algarra-la-jose/"><font color="black">Más en este enlace</font></a>
-																</p></small>
-										</blockquote>
-									</div>
-
-									<div class="item">
-										<blockquote>
-											<p class="lead"><strong><big>
-											<h2>DISCO RECOMENDADO DEL MES</h2></blockquote>
-												<center>"El pianista Alejandro Algarra ofrece en su debut discográfico un doble CD en el que muestra dos 
-													inmensos corpus de la música para piano: los preludios de Chopin y Rachmaninov. Un reto mayúsculo, 
-													sin duda alguna y con un gran resultado. [...] Alejandro Algarra tiene un mecanismo que le permite 
-													conseguir lo que se propone, y aporta un virtuosismo que sabe poner al servicio de la musicalidad y 
-													expresividad siempre imperantes. Una fiesta del piano que le hará disfrutar de lo lindo, con una toma 
-													de sonido impecable."</big>
-											</p>
-											<p>-Revista Segarra, August 2022</p></center></strong>
-										<blockquote>
-										<p class="text-center"><small>
-											<a class="btn btn-primary" href="assets/reviews/revista_segarra.jpeg"><font color="black">Más en este enlace</font></a>
-															</p></small>
-										</blockquote>
-									</div>
-								</div>
-								<a class="left carousel-control" href="#Criticas" data-slide="prev">
-									<span class="glyphicon glyphicon-chevron-left"></span>
-									<span class="sr-only">Previous</span>
-								</a>
-								<a class="right carousel-control" href="#Criticas" data-slide="next">
-									<span class="glyphicon glyphicon-chevron-right"></span>
-									<span class="sr-only">Next</span>
-							</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>		
-		</section>
-
-		<!-- DON JULIO -->
-		<section id="homenaje" class="whitecolor parallax section" style="background:linear-gradient(to right, #000000, #4c4c4c);">
-			<div class="wrapsection">
-				<div class="container">
-			    <div class="row">
-			      <div class="col-md-16 sol-sm-12">
-							<div class="item"><center>
-								<h3 class="section-title justtitle">Julio García Casas: “la música es patrimonio de la humanidad y debe cultivarse”</h3>
-									<p class="lead "><strong>Opera World entrevistó a Don Julio García Casas tras el recital ofrecido por el pianista granadino Alejandro Algarra en Sevilla el pasado 15 de Junio con los 24 Preludios de Chopin como plato principal, con cuya interpretación quiso Algarra agasajar a este gran dinamizador de la vida cultural de Sevilla. Nacido en Fregenal de la Sierra (Badajoz), pero afincado desde hace décadas en la capital hispalense, Julio García Casas ha presidido Juventudes Musicales de Sevilla desde tiempo ya inmemorial, prestando desde esta institución un apoyo fundamental en los inicios de sus carreras a las sucesivas generaciones de pianistas españoles, desde Rafael Orozco a Juan Pérez Floristán.</p>
-			            <p><big>Toda la entrevista en <a href="http://www.operaworld.es/julio-garcia-casas-la-musica-patrimonio-la-humanidad-cultivarse/">este enlace</a>.</big></p>
-			            <p><small>Carlos Forcada</strong></small></p></center>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-
-		<!-- CREDITOS -->
-		<section id="credits" class="text-center">
-			<!--<span class="social wow zoomIn">
-				<a href="#"><i class="fa fa-facebook"></i></a>
-				<a href="#"><i class="fa fa-twitter"></i></a>
-				<a href="#"><i class="fa fa-skype"></i></a>
-				<a href="#"><i class="fa fa-linkedin"></i></a>
-				<a href="#"><i class="fa fa-pinterest"></i></a>
-				<a href="#"><i class="fa fa-google-plus"></i></a>
-			</span><br/> -->
-			Copyright &copy; <a href="https://github.com/teresalgarra">Teresa Algarra</a>
-		</section>
-
-		<!-- Bootstrap core JavaScript -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/bootstrap.min.js"></script>
-		<script src="assets/js/waypoints.min.js"></script>
-		<script src="assets/js/jquery.scrollTo.min.js"></script>
-		<script src="assets/js/jquery.localScroll.min.js"></script>
-		<script src="assets/js/jquery.magnific-popup.min.js"></script>
-		<script src="assets/js/validate.js"></script>
-		<script src="assets/js/common.js"></script>
-	</body>
+    document.addEventListener('DOMContentLoaded', () => {
+      setLanguage(localStorage.getItem('lang') || 'es');
+    });
+  </script>
+</body>
 </html>

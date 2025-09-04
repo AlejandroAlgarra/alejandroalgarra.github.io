@@ -1,147 +1,103 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="es">
-	<head>
-		<!-- Meta, title, CSS, favicons, etc. -->
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="">
-		<meta name="author" content="Teresa Algarra Ulierte">
-		<title> Alejandro Algarra </title>
-		<!-- Styles -->
-		<link rel='stylesheet' href='assets/css/bootstrap.min.css'>
-		<link rel='stylesheet' href='assets/css/animate.min.css'>
-		<link rel='stylesheet' href="assets/css/font-awesome.min.css"/>
-		<link rel='stylesheet' href="assets/css/style.css"/>
-		<!-- Fonts -->
-		<link href='http://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
-		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-		<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-		<!-- Favicon -->
-		<link rel="shortcut icon" href="#">
-	</head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alejandro Algarra | Piano</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Navbar (same on all pages) -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Alejandro Algarra <span class="text-muted">Piano</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html" data-i18n="navbar_bio"></a></li>
+          <li class="nav-item"><a class="nav-link" href="media.html" data-i18n="navbar_media"></a></li>
+          <li class="nav-item"><a class="nav-link" href="disco.html" data-i18n="navbar_disco"></a></li>
+          <li class="nav-item"><a class="nav-link" href="criticas.html" data-i18n="navbar_reviews"></a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html" data-i18n="navbar_contact"></a></li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item"><button class="btn btn-link nav-link" onclick="setLanguage('es')"><img src="assets/img/spanish.png" width="30"></button></li>
+          <li class="nav-item"><button class="btn btn-link nav-link" onclick="setLanguage('en')"><img src="assets/img/english.png" width="30"></button></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
+  <!-- Hero -->
+  <header class="d-flex align-items-center text-center bg-dark text-white" style="height:100vh;background:url('assets/img/8.jpg') center/cover no-repeat;">
+    <div class="container">
+      <h1 data-i18n="hero_title"></h1>
+      <p data-i18n="hero_subtitle"></p>
+      <a href="#biografia" class="btn btn-primary mt-3" data-i18n="hero_cta"></a>
+    </div>
+  </header>
 
-	<body>
-		<!-- Hero BG -->
-		<div id="parallax">
-		</div>
-		<!-- Header -->
-		<header id="header" class="navbar navbar-inverse navbar-fixed-top" role="banner">
-			<div class="container">
-				<div class="navbar-header">
-					<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					</button>
-					<a href="index.html" class="navbar-brand"> Alejandro Algarra <span class="lighter">Piano</span></a>
-				</div>
-				<!-- Start Navigation -->
-				<nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
-					<!-- Pages -->
-					<ul class="nav navbar-nav navbar-left">
-						<li><a href="index.html">Biografía</a></li>
-						<li><a href="media.html">Media</a></li>
-						<li><a href="disco.html">Discografía</a></li>
-						<li><a href="criticas.html">Críticas</a></li>
-						<li><a href="contacto.html">Contacto</a></li>
-					</ul>
-					<!-- Languages -->
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="index.html"><img src="assets/img/spanish.png" height="30" width="40"></a></li>
-						<li><a href="index_en.html"><img src="assets/img/english.png" height="30" width="40"></a></li>
-					</ul>
-				</nav>
-			</div>
-		</header>
+  <!-- Biography -->
+    <section id="biografia">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-4">
+            <img src="assets/img/4.jpg" alt="Alejandro Algarra" class="img-fluid rounded shadow">
+          </div>
+          <div class="col-md-8 mt-4 mt-md-0">
+            <h2 data-i18n="bio_title"></h2>
+            <p data-i18n="bio_text"></p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-		<!-- BIOGRAFÍA -->
+  <!-- Footer -->
+  <footer class="text-center bg-dark text-white py-3">
+    <p>&copy; 2025 <a href="https://github.com/teresalgarra" class="text-white">Teresa Algarra</a></p>
+  </footer>
 
-		<section id="about" class="parallax section" style="background-image: url(assets/img/10.jpg);opacity:0.7;">
-			<div class="wrapsection">
-				<!--<div class="parallax-overlay" style="background-image: url(assets/img/10.jpg);opacity:0.5;"></div>-->
-				<div class="container">
-					<div class="row">
-						<div class="col-md-16">
-							<div class="maintitle">
-								<h3 class="section-title"><font color="white"><strong>Biografía<span class="lighter"> </font></span></strong></h3>
-								<font color="white">
-									<p class="lead"><small>Señalado por la crítica especializada como uno de los principales 
-										jóvenes talentos del panorama nacional español, el pianista Alejandro 
-										Algarra cursa sus estudios en su ciudad natal, Granada, culminándolos de mano del 
-										catedrático de piano Antonio Sánchez Lucena. Amplía su formación 
-										con grandes maestros del piano como Josep Colom, Albert Attenelle, David Kuyken, 
-										Sergei Yerokhin, William Fong, Ramon Coll, Frank Wibaut, Christopher Elton, 
-										Joaquín Achúcarro, Domenico Codispoti, Bruno Canino, Dimitri Alexeev o Pascal Rogé, 
-										entre otros. Obtiene los títulos de Experto Universitario en Interpretación, 
-										Máster en Interpretación Instrumental y Máster en Creación e Interpretación 
-										Musical, por la Universidad Internacional de Andalucía y por la 
-										Universidad Rey Juan Carlos de Madrid, respectivamente.</small></p>
+  <!-- Scripts -->
+  <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js'></script>
+  <script>
+    const translations = {
+      es: {
+        'navbar_bio': 'Biografía', 'navbar_media': 'Media', 'navbar_disco': 'Discografía', 'navbar_reviews': 'Críticas', 'navbar_contact': 'Contacto',
+        'hero_title': 'Alejandro Algarra', 'hero_subtitle': 'Pianista · Intérprete · Artista', 'hero_cta': 'Descubrir más',
+        'bio_title': 'Biografía',
+        'bio_text': '<p>Señalado por la crítica especializada como uno de los principales jóvenes talentos del panorama nacional español, el pianista Alejandro Algarra cursa sus estudios en su ciudad natal, Granada, culminándolos de mano del catedrático de piano Antonio Sánchez Lucena. Amplía su formación con grandes maestros del piano como Josep Colom, Albert Attenelle, David Kuyken, Sergei Yerokhin, William Fong, Ramon Coll, Frank Wibaut, Christopher Elton, Joaquín Achúcarro, Domenico Codispoti, Bruno Canino, Dimitri Alexeev o Pascal Rogé, entre otros. Obtiene los títulos de Experto Universitario en Interpretación, Máster en Interpretación Instrumental y Máster en Creación e Interpretación Musical, por la Universidad Internacional de Andalucía y por la Universidad Rey Juan Carlos de Madrid, respectivamente.</p><p> Su creciente actividad concertística le ha llevado a actuar, tanto en solitario como acompañado por múltiples orquestas, en un gran número de salas de concierto por España y Europa, con gran éxito de crítica. ha sido invitado a festivales pianísticos de relevancia, entre los que destacan los en Europa, Asia y América, y su presencia es habitual en ciclos como los Concerts de la Pedrera en Barcelona, la programación del Auditorio Nacional de Música de Madrid, el Festival de La Maestranza en Sevilla, el Ciclo Grandes Intérpretes de Madrid, los Festivales Noches en los Jardines de Falla de Granada, el ciclo Piano con Sabor del Auditorio Manuel de Falla de Granada, el Festival "Rafael Orozco" de Córdoba, etcétera, además de ser invitado para ofrecer recitales y conciertos como solista con orquesta en el marco de cursos concursos de piano, nacionales e internacionales.</p><p> Ha sido galardonado en concursos de ámbito nacional e internacional, entre los que destacan el Concurso de Piano "Ciudad de Albacete", el Concurso Internacional de Piano "Ria de Vigo", el Premi "Amparo Fandos" de Torrent, el Concurso Internacional de Piano "Frechilla-Zuloaga", el Barcelona Piano Academy (BPA), o el Concurso Internacional de Piano de Ibiza, entre otros. De igual modo, es invitado de manera regular para formar parte del jurado de multitud de concursos de piano, nacionales e internacionales. </p><p> Ha realizado grabaciones para RNE y TVE, así como para sellos discográficos como Enclave de Autores e IBS Classical, con la que su doble CD "Chopin-Rachmaninov, Complete Preludes" fue elegido como disco revelación por la emisora internacional Radio Classic FM. </p><p> Compagina su actividad como concertista con la docencia, impartiendo clases magistrales de perfeccionamiento pianístico por toda nuestra geografía, además de como Catedrático de Piano en el Real Conservatorio Superior de Música "Victoria Eugenia" de Granada.</p>'
+      },
+      en: {
+        'navbar_bio': 'Biography', 'navbar_media': 'Media', 'navbar_disco': 'Discography', 'navbar_reviews': 'Reviews', 'navbar_contact': 'Contact',
+        'hero_title': 'Alejandro Algarra', 'hero_subtitle': 'Pianist · Performer · Artist', 'hero_cta': 'Discover more',
+        'bio_title': 'Biography',
+        'bio_text': '<p>Noted by critics as one of the leading young talents of the Spanish national scene, the pianist Alejandro Algarra studied in his hometown, Granada. He concluded his studies with the piano professor Antonio Sánchez Lucena. He expanded his training with great piano maestri like Josep Colom, Albert Attenelle, David Kuyken, Sergei Yerokhin, William Fong, Ramon Coll or Frank Wibaut, among others.Josep Colom, Albert Attenelle, David Kuyken, Sergei Yerokhin, William Fong, Ramon Coll, Frank Wibaut, Christopher Elton, Joaquín Achúcarro, Domenico Codispoti, Bruno Canino, Dimitri Alexeev and Pascal Rogé, among others. He obtained the titles of University Expert in Interpretation and Master in Instrumental Interpretation Piano specialty and Master in Musical Creation and Performance from the International University of Andalusia and the Rey Juan Carlos University, respectively.</p><p>His increasing concert activity has led him to perform in a large number of concert halls across Spain and Europe both alone and accompanied by several orchestras, and always with great critical success. He has been invited to relevant piano festivals in Europe, Asia and America, and his attendance is customary in music series such as the "Concerts de la Pedrera" in Barcelona, the programme of the Madrid National Music Auditorium, the "Festival de La Maestranza" in Seville, the "Ciclo Grandes Intérpretes" in Madrid, the "Festival Noches en los Jardines de Falla" in Granada, the series "Piano con Sabor" of the Manuel de Falla Auditorium in Granada, the "Festival Rafael Orozco" in Cordoba, etc. He has also been asked to give recitals as a soloist with orchestra in the context of both national and international piano competitions and classes.</p><p>He has been given awards in national and international competitions, among which we can mention the "Ciudad de Albacete" Piano Competition, the "Ria de Vigo" International Piano Competition, the "Amparo Fandos" Prize in Torrent, the "Frechilla-Zuloaga" International Piano Competition, the Barcelona Piano Academy (BPA), or the Ibiza International Piano Competition, among others. He has also been regularly invited to be a part of the jury of a large number of national and international piano competitions.</p><p>He has performed on recordings for RNE and TVE, as well as for labels such as Enclave de Autores and IBS Classical. With the latter, his double CD "Chopin-Rachmaninov, Complete Preludes" was chosen as a revelation record by the international radio station Radio Classic FM.</p><p>He combines his career as a performer with teaching, giving piano improvement masterclasses all over Spain, as well as being chair Professor of Piano at the Royal Conservatory of Music "Victoria Eugenia" in Granada.</p>'
+      }
+    };
 
-									<p class="lead"><small>Su creciente actividad concertística le ha llevado a actuar, 
-										tanto en solitario como acompañado por múltiples orquestas, en un gran 
-										número de salas de concierto por España y Europa, con gran éxito de crítica. 
-										ha sido invitado a festivales pianísticos de relevancia, entre los que destacan los 
-										en Europa, Asia y América, y su presencia es habitual en ciclos como los
-										Concerts de la Pedrera en Barcelona, la programación del Auditorio Nacional de 
-										Música de Madrid, el Festival de La Maestranza 
-										en Sevilla, el Ciclo Grandes Intérpretes de Madrid, los Festivales Noches en los 
-										Jardines de Falla de Granada, el ciclo Piano con Sabor del Auditorio 
-										Manuel de Falla de Granada, el Festival “Rafael Orozco” de Córdoba, etcétera, 
-										además de ser invitado para ofrecer recitales y conciertos 
-										como solista con orquesta en el marco de cursos concursos de piano, nacionales e 
-										internacionales.</small></p>
+    function setLanguage(lang) {
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const k = el.getAttribute('data-i18n');
+        if (translations[lang][k]) {
+          if (k === 'bio_text') {
+            el.innerHTML = translations[lang][k];
+          } else {
+            el.textContent = translations[lang][k];
+          }
+        }
+      });
+      localStorage.setItem('lang', lang);
+    }
 
-									<p class="lead"><small>Ha sido galardonado en concursos de ámbito nacional e 
-										internacional, entre los que destacan el Concurso de Piano “Ciudad de Albacete”, 
-										el Concurso Internacional de Piano “Ria de Vigo”, el Premi “Amparo Fandos” 
-										de Torrent, el Concurso Internacional de Piano “Frechilla-Zuloaga”, 
-										el Barcelona Piano Academy (BPA), o el Concurso Internacional de Piano de 
-										Ibiza, entre otros. De igual modo, es invitado de manera regular para formar parte 
-										del jurado de multitud de concursos de piano, nacionales e internacionales.</small></p>
-
-									<p class="lead"><small>Ha realizado grabaciones para RNE y TVE, así como para sellos 
-										discográficos como Enclave de Autores e IBS Classical, con la que su doble CD 
-										“Chopin-Rachmaninov, Complete Preludes” fue elegido como disco revelación por 
-										la emisora internacional Radio Classic FM.</small></p>
-
-									<p class="lead"><small>Compagina su actividad como concertista 
-										con la docencia, impartiendo clases magistrales de perfeccionamiento pianístico 
-										por toda nuestra geografía, además de como Catedrático de Piano en el Real 
-										Conservatorio Superior de Música “Victoria Eugenia” de Granada y en el Centro 
-										Superior “Forum Musikae” de Madrid, donde imparte las titulaciones de Grado 
-										y Máster en Interpretación e Investigación.</small></p>
-									
-								</font>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- CREDITOS -->
-		<section id="credits" class="text-center">
-			<!--<span class="social wow zoomIn">
-				<a href="#"><i class="fa fa-facebook"></i></a>
-				<a href="#"><i class="fa fa-twitter"></i></a>
-				<a href="#"><i class="fa fa-skype"></i></a>
-				<a href="#"><i class="fa fa-linkedin"></i></a>
-				<a href="#"><i class="fa fa-pinterest"></i></a>
-				<a href="#"><i class="fa fa-google-plus"></i></a>
-			</span><br/> -->
-			Copyright &copy; <a href="https://github.com/teresalgarra">Teresa Algarra</a>
-		</section>
-
-		<!-- Bootstrap core JavaScript -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/bootstrap.min.js"></script>
-		<script src="assets/js/waypoints.min.js"></script>
-		<script src="assets/js/jquery.scrollTo.min.js"></script>
-		<script src="assets/js/jquery.localScroll.min.js"></script>
-		<script src="assets/js/jquery.magnific-popup.min.js"></script>
-		<script src="assets/js/validate.js"></script>
-		<script src="assets/js/common.js"></script>
-	</body>
+    document.addEventListener('DOMContentLoaded', () => {
+      setLanguage(localStorage.getItem('lang') || 'es');
+    });
+    </script>
+</body>
 </html>
+
+
